@@ -3,172 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Loading... | AXE-Assassins E-sport</title>
+  <title>Assassins-Esport | Dominate the Digital Arena</title>
   <link rel="alternate icon" type="image/png" href="title.png">
   <link rel="apple-touch-icon" href="title.png">
-  <style>
-    /* Loading Screen Styles */
-    .pubg-loading-screen {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #111;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-
-    .loading-container {
-      width: 80%;
-      max-width: 600px;
-      text-align: center;
-    }
-
-    .logo-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 30px;
-    }
-
-    .logo-img {
-      height: 120px;
-      width: auto;
-      margin-bottom: 20px;
-    }
-
-    .logo-text {
-      font-family: 'Arial', sans-serif;
-      font-size: 2.5rem;
-      letter-spacing: 3px;
-      color: #fff;
-      text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
-      text-transform: uppercase;
-    }
-
-    .loading-bar-container {
-      width: 100%;
-      height: 20px;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-      margin-bottom: 30px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .loading-bar {
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 0%;
-      background: linear-gradient(90deg, #ff0000, #ff4500);
-      border-radius: 10px;
-      transition: width 0.3s ease;
-    }
-
-    .loading-percentage {
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 0.8rem;
-      color: #fff;
-      text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    }
-
-    .loading-tip {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 15px;
-      border-left: 4px solid #ff0000;
-      margin-bottom: 20px;
-      text-align: left;
-    }
-
-    .tip-title {
-      font-weight: bold;
-      color: #ff4500;
-      margin-right: 10px;
-    }
-
-    .version-info {
-      font-size: 0.8rem;
-      color: rgba(255, 255, 255, 0.5);
-      letter-spacing: 1px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<!-- PUBG-style Loading Screen -->
-<div class="pubg-loading-screen">
-  <div class="loading-container">
-    <div class="logo-container">
-      <img src="logo.png" alt="AXE-Assassins Logo" class="logo-img">
-      <span class="logo-text">AXE ASSASSINS</span>
-    </div>
-    <div class="loading-bar-container">
-      <div class="loading-bar"></div>
-      <div class="loading-percentage">0%</div>
-    </div>
-    <div class="loading-tip">
-      <span class="tip-title">TIP:</span>
-      <span class="tip-text">Did you know? The best players train daily to maintain their skills!</span>
-    </div>
-    <div class="version-info">v1.0.0 | © 2023 AXE Assassins E-Sport</div>
-  </div>
+
+<!-- Loading Screen -->
+<div id="loading-screen">
+  <div class="loader"></div>
 </div>
 
+<header class="main-header">
+  <div class="header-container">
+    <div class="logo">
+      <img src="logo.png" alt="AXE-Assassins E-sport Logo" class="logo-img">
+      <h1>AXE-Assassins E-sport</h1>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">Teams</a></li>
+        <li><a href="#apply">Tournaments</a></li>
+        <li><a href="#Tournament Winners">Winners</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Main Content -->
+<main>
+  <section class="hero">
+    <div class="hero-logo">
+      <img src="logo.png" alt="AXE-Assassins E-sport Logo" class="hero-logo-img">
+    </div>
+    <h1>AXE-ASSASSINS E-SPORT</h1>
+    <h2>Dominate the Digital Arena</h2>
+    <p>Where Gamers Become Legends - AXE-Assassins E-sport</p>
+    <a href="#apply" class="btn">Join Now</a>
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="section-title">About Us</h2>
+    <p>Welcome to the premier destination for esports enthusiasts...</p>
+  </section>
+
+  <section class="join-revolution">
+    <h2 class="section-title">Join the Esports Revolution</h2>
+    <p>Where Legends Are Born</p>
+    <a href="Register.html" class="btn">Register</a>
+  </section>
+
+  <section class="apply" id="apply">
+    <h2 class="Apply for our tournament">Apply</h2> <br>
+    <h3>Apply for tournament</h3>
+    <!-- scoreboard -->
+    <a href="scrims.html" class="btn">View Scoreboard</a>
+  </section>
+</main>
+
+  <section class="WinnersList" id="Winners">
+    <h2 class="Winners">Rankholders</h2>
+    <h3>Show the Rankholders</h3>
+    <a href="Winnerstable.html" class="btn">Rankholders</a>
+  </section>
+
+  <section class="EventUpdates" id="event">
+    <h2 class="event">Evnet updates</h2>
+    <h3> Here you can see our event details</h3>
+    <a href="Events.html" class="btn"> EVENTS </a>
+  </section>
+
+<footer>
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#apply">Apply</a>
+    <a href="Winnerslist"> Rank Holders</a>
+  </div>
+  <div class="footer-logo">
+    <img src="logo.png" alt="AXE-Assassins E-sport Logo">
+  </div>
+  <p>AXE Assassins-Esport &copy; 2025. All rights reserved.</p>
+  <div class="assassins-esport-banner">
+    <span>CREATED BY</span><br />
+    <strong>AXE Assassins E-Sport</strong><br />
+    <span>AAES</span>
+  </div>
+</footer>
+
+<button id="goTopBtn" onclick="scrollToTop()">↑</button>
+
+<script src="script.js"></script>
+
 <script>
-  // Loading Screen Script
-  document.addEventListener('DOMContentLoaded', function() {
-    const loadingBar = document.querySelector('.loading-bar');
-    const percentageText = document.querySelector('.loading-percentage');
-    const loadingScreen = document.querySelector('.pubg-loading-screen');
-    const tips = [
-      "Did you know? The best players train daily to maintain their skills!",
-      "Pro tip: Communication is key in team-based esports!",
-      "Remember to take breaks during long gaming sessions!",
-      "Our tournaments feature the most competitive players!",
-      "Customize your gear for optimal performance.",
-      "Warm up before matches for better reaction times!",
-      "Watch replays to analyze and improve your gameplay!"
-    ];
-    const tipElement = document.querySelector('.tip-text');
-
-    // Set random tip
-    tipElement.textContent = tips[Math.floor(Math.random() * tips.length)];
-
-    // Simulate loading with more realistic increments
-    let progress = 0;
-    const interval = setInterval(() => {
-      // More realistic loading pattern - slows down near the end
-      if (progress < 70) {
-        progress += Math.random() * 15;
-      } else if (progress < 90) {
-        progress += Math.random() * 5;
-      } else {
-        progress += Math.random() * 2;
-      }
-
-      if (progress > 100) progress = 100;
-
-      loadingBar.style.width = `${progress}%`;
-      percentageText.textContent = `${Math.floor(progress)}%`;
-
-      if (progress === 100) {
-        clearInterval(interval);
-        // Add a slight delay before redirecting
-        setTimeout(() => {
-          // Redirect to AssasinsESport.html
-          window.location.href = "AssasinsESport.html";
-        }, 800);
-      }
-    }, 200);
+  window.addEventListener('load', function () {
+    const loader = document.getElementById('loading-screen');
+    loader.style.opacity = '0';
+    setTimeout(() => {
+      loader.style.display = 'none';
+    }, 500);
   });
 </script>
+
 </body>
 </html>
