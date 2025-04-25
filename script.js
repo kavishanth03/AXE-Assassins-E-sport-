@@ -1,4 +1,4 @@
-// Mobile Navigation Toggle
+// Hamburger Menu Toggle
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('.main-nav');
 
@@ -7,7 +7,7 @@ hamburger.addEventListener('click', () => {
   nav.classList.toggle('active');
 });
 
-// Close mobile menu when clicking on a link
+// Close mobile nav when clicking a link
 document.querySelectorAll('.main-nav a').forEach(link => {
   link.addEventListener('click', () => {
     hamburger.classList.remove('active');
@@ -15,20 +15,13 @@ document.querySelectorAll('.main-nav a').forEach(link => {
   });
 });
 
-// Back to Top Button
+// Scroll to Top Button
 const goTopBtn = document.getElementById('goTopBtn');
 
 window.addEventListener('scroll', () => {
-  if (window.pageYOffset > 300) {
-    goTopBtn.style.display = 'flex';
-  } else {
-    goTopBtn.style.display = 'none';
-  }
+  goTopBtn.style.display = window.scrollY > 100 ? 'block' : 'none';
 });
 
 function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
