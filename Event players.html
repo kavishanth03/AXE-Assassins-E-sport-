@@ -7,8 +7,8 @@
     <link rel="alternate icon" type="image/png" href="title.png">
     <link rel="apple-touch-icon" href="title.png">
     <link rel="stylesheet" href="event players.css">
-
 </head>
+
 <body>
 <header class="main-header">
     <div class="header-container">
@@ -47,8 +47,23 @@
 
 <div class="btn-container">
     <a href="index.html" class="btn" id="backLink">Back to ASSASSINS E-SPORT Home</a>
+    <button class="btn" id="lockButton">Lock Details</button> <!-- NEW LOCK BUTTON -->
 </div>
 
-<script src="Evntplayers.js"> </script>
+<script src="Evntplayers.js"></script>
+
+<script>
+    // Lock functionality
+    const lockButton = document.getElementById('lockButton');
+    lockButton.addEventListener('click', function() {
+      const inputs = document.querySelectorAll('#scoreTableBody input');
+      inputs.forEach(input => {
+        input.disabled = true;
+      });
+      lockButton.disabled = true; // Disable the lock button after locking
+      lockButton.innerText = "Locked ✅";
+    });
+</script>
+
 </body>
 </html>

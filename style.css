@@ -101,10 +101,37 @@ img {
 
 /* Sections */
 .section-container {
-  padding: 2rem 1rem;
-  max-width: 1000px;
-  margin: 0 auto;
+  padding: 100px 40px;
   text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* <-- Added this */
+}
+
+/* Each section different background */
+.section-bg-1 {
+  background-image: url('background1.jpg');
+}
+
+.section-bg-2 {
+  background-image: url('background2.jpg');
+}
+
+.section-bg-3 {
+  background-image: url('background3.jpg');
+}
+
+.section-bg-4 {
+  background-image: url('background4.jpg');
+}
+
+.section-bg-5 {
+  background-image: url('background5.jpg');
+}
+
+.section-bg-6 {
+  background-image: url('background6.jpg');
 }
 
 .section-title {
@@ -117,7 +144,7 @@ img {
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
   background: #ff4757;
-  color: white;
+  color: black;
   border-radius: 5px;
   text-decoration: none;
 }
@@ -142,7 +169,7 @@ footer {
 .footer-links,
 .footer-logo,
 .footer-contact {
-  flex: 1 1 200px;
+  flex: 200px;
 }
 
 /* Go to Top Button */
